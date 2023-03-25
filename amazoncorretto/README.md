@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `amazoncorretto` official image](https://hub.docker.com/_/amazoncorretto) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,42 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u362`, `8u362-al2`, `8-al2-full`, `8-al2-jdk`, `latest`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jdk/al2/Dockerfile)
--	[`8-al2023-RC`, `8u362-al2023-RC`, `8-al2023-jdk`, `8-al2023-RC-jre`, `8u362-al2023-RC-jre`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jdk/al2023/Dockerfile)
--	[`8-alpine3.14`, `8u362-alpine3.14`, `8-alpine3.14-full`, `8-alpine3.14-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jdk/alpine/3.14/Dockerfile)
--	[`8-alpine3.14-jre`, `8u362-alpine3.14-jre`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jre/alpine/3.14/Dockerfile)
--	[`8-alpine3.15`, `8u362-alpine3.15`, `8-alpine3.15-full`, `8-alpine3.15-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jdk/alpine/3.15/Dockerfile)
--	[`8-alpine3.15-jre`, `8u362-alpine3.15-jre`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jre/alpine/3.15/Dockerfile)
--	[`8-alpine3.16`, `8u362-alpine3.16`, `8-alpine3.16-full`, `8-alpine3.16-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jdk/alpine/3.16/Dockerfile)
--	[`8-alpine3.16-jre`, `8u362-alpine3.16-jre`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jre/alpine/3.16/Dockerfile)
--	[`8-alpine3.17`, `8u362-alpine3.17`, `8-alpine3.17-full`, `8-alpine3.17-jdk`, `8-alpine`, `8u362-alpine`, `8-alpine-full`, `8-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jdk/alpine/3.17/Dockerfile)
--	[`8-alpine3.17-jre`, `8u362-alpine3.17-jre`, `8-alpine-jre`, `8u362-alpine-jre`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/8/jre/alpine/3.17/Dockerfile)
--	[`11`, `11.0.18`, `11.0.18-al2`, `11-al2-full`, `11-al2-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/jdk/al2/Dockerfile)
--	[`11-al2023-RC`, `11.0.18-al2023-RC`, `11-al2023-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/jdk/al2023/Dockerfile)
--	[`11-al2023-RC-headless`, `11.0.18-al2023-RC-headless`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/headless/al2023/Dockerfile)
--	[`11-al2023-RC-headful`, `11.0.18-al2023-RC-headful`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/headful/al2023/Dockerfile)
--	[`11-alpine3.14`, `11.0.18-alpine3.14`, `11-alpine3.14-full`, `11-alpine3.14-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/jdk/alpine/3.14/Dockerfile)
--	[`11-alpine3.15`, `11.0.18-alpine3.15`, `11-alpine3.15-full`, `11-alpine3.15-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/jdk/alpine/3.15/Dockerfile)
--	[`11-alpine3.16`, `11.0.18-alpine3.16`, `11-alpine3.16-full`, `11-alpine3.16-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/jdk/alpine/3.16/Dockerfile)
--	[`11-alpine3.17`, `11.0.18-alpine3.17`, `11-alpine3.17-full`, `11-alpine3.17-jdk`, `11-alpine`, `11.0.18-alpine`, `11-alpine-full`, `11-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/11/jdk/alpine/3.17/Dockerfile)
--	[`17`, `17.0.6`, `17.0.6-al2`, `17-al2-full`, `17-al2-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/jdk/al2/Dockerfile)
--	[`17-al2023-RC`, `17.0.6-al2023-RC`, `17-al2023-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/jdk/al2023/Dockerfile)
--	[`17-al2023-RC-headless`, `17.0.6-al2023-RC-headless`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/headless/al2023/Dockerfile)
--	[`17-al2023-RC-headful`, `17.0.6-al2023-RC-headful`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/headful/al2023/Dockerfile)
--	[`17-alpine3.14`, `17.0.6-alpine3.14`, `17-alpine3.14-full`, `17-alpine3.14-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/jdk/alpine/3.14/Dockerfile)
--	[`17-alpine3.15`, `17.0.6-alpine3.15`, `17-alpine3.15-full`, `17-alpine3.15-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/jdk/alpine/3.15/Dockerfile)
--	[`17-alpine3.16`, `17.0.6-alpine3.16`, `17-alpine3.16-full`, `17-alpine3.16-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/jdk/alpine/3.16/Dockerfile)
--	[`17-alpine3.17`, `17.0.6-alpine3.17`, `17-alpine3.17-full`, `17-alpine3.17-jdk`, `17-alpine`, `17.0.6-alpine`, `17-alpine-full`, `17-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/17/jdk/alpine/3.17/Dockerfile)
--	[`19`, `19.0.2`, `19.0.2-al2`, `19-al2-full`, `19-al2-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/19/jdk/al2/Dockerfile)
--	[`19-alpine3.14`, `19.0.2-alpine3.14`, `19-alpine3.14-full`, `19-alpine3.14-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/19/jdk/alpine/3.14/Dockerfile)
--	[`19-alpine3.15`, `19.0.2-alpine3.15`, `19-alpine3.15-full`, `19-alpine3.15-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/19/jdk/alpine/3.15/Dockerfile)
--	[`19-alpine3.16`, `19.0.2-alpine3.16`, `19-alpine3.16-full`, `19-alpine3.16-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/19/jdk/alpine/3.16/Dockerfile)
--	[`19-alpine3.17`, `19.0.2-alpine3.17`, `19-alpine3.17-full`, `19-alpine3.17-jdk`, `19-alpine`, `19.0.2-alpine`, `19-alpine-full`, `19-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/19/jdk/alpine/3.17/Dockerfile)
--	[`20`, `20.0.0`, `20.0.0-al2`, `20-al2-full`, `20-al2-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/20/jdk/al2/Dockerfile)
--	[`20-alpine3.14`, `20.0.0-alpine3.14`, `20-alpine3.14-full`, `20-alpine3.14-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/20/jdk/alpine/3.14/Dockerfile)
--	[`20-alpine3.15`, `20.0.0-alpine3.15`, `20-alpine3.15-full`, `20-alpine3.15-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/20/jdk/alpine/3.15/Dockerfile)
--	[`20-alpine3.16`, `20.0.0-alpine3.16`, `20-alpine3.16-full`, `20-alpine3.16-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/20/jdk/alpine/3.16/Dockerfile)
--	[`20-alpine3.17`, `20.0.0-alpine3.17`, `20-alpine3.17-full`, `20-alpine3.17-jdk`, `20-alpine`, `20.0.0-alpine`, `20-alpine-full`, `20-alpine-jdk`](https://github.com/corretto/corretto-docker/blob/89f3ffd0116c0ade71636d8084a6e4163467e89f/20/jdk/alpine/3.17/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/amazoncorretto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/amazoncorretto.svg?label=arm32v6/amazoncorretto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/amazoncorretto/)
 
 # Quick reference (cont.)
 
@@ -121,22 +90,6 @@ If no updated package is available, please treat this as a potential security is
 It is the responsibility of the base docker image supplier to provide timely security updates to images and packages. The amazoncorretto images are automatically rebuilt when a new base image is made available, but we do not make changes to our Dockerfiles to pull in one-off package updates. If a new base image has not yet been made generally available by a base docker image maintainer, please contact that maintainer to request that the issue be addressed.
 
 Note that there are multiple reasons why a CVE may appear to be present in a docker image, as explained in the [docker library FAQs](https://github.com/docker-library/faq/tree/73f10b0daf2fb8e7b38efaccc0e90b3510919d51#why-does-my-security-scanner-show-that-an-image-has-cves).
-
-# Image Variants
-
-The `amazoncorretto` images come in many flavors, each designed for a specific use case.
-
-## `amazoncorretto:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `amazoncorretto:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
