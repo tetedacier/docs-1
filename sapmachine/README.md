@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,6 +30,8 @@ WARNING:
 -	[`17`, `17.0.6`, `lts`](https://github.com/SAP/SapMachine-infrastructure/blob/8d5fd07f2e40428a2027de2abf78ac9be0e3bc9d/dockerfiles/official/17/Dockerfile)
 -	[`19`, `19.0.2`](https://github.com/SAP/SapMachine-infrastructure/blob/c515da6c71d27d6bbf8fca4c0e782a50e9f8319c/dockerfiles/official/19/Dockerfile)
 -	[`20`, `latest`](https://github.com/SAP/SapMachine-infrastructure/blob/b0f930a0c42d3e856e6ee459c569c69336a5b00a/dockerfiles/official/20/Dockerfile)
+
+[![ppc64le/sapmachine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/sapmachine.svg?label=ppc64le/sapmachine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/sapmachine/)
 
 # Quick reference (cont.)
 
@@ -65,14 +69,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull ppc64le/sapmachine:latest
+docker run -it ppc64le/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM ppc64le/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]
